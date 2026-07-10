@@ -235,8 +235,8 @@
         }
         function summonForm(isUpdate, e) {
 
-            const titleName = document.getElementById("titleName")
-            const files = document.getElementById("files")
+            const titleName = addCard.querySelector("#titleName")
+            const files = addCard.querySelector("#files")
             addCard.showModal()
             if (!isUpdate) {
                 files.required = true
