@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JournalPic</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header id="header">
+      
+        <div class="mobile-sides">
+        <h1>Changelog</h1>
+        <p id="greeting">Welcome Writer</p>
+
+        </div>
+       
+        <nav>
+          
+            
+            <div class="mobile-sides">
+            <form id="searchForm">
+                <label for="search">Search: </label>
+                <input type="search" id="search">
+                <button id="search">Search</button>
+            </form>
+            </div><br>
+            <div class="mobile-sides" id="button-menu">
+  
+                <button id="add">Create Entry</button>
+                <button id="customBg">Accent Colour</button>
+                <button id="default">Default Colour</button>
+                <button id="resetName">Change Name</button>
+                <input type="color" id="bgCo">
+        
+            </div>
+        </nav>
+    </header>
+    <div id="container"></div>
+    <dialog id="addCard">
+        <form id="addition">
+            <h2 id="titleName">Add Item</h2>
+            <label for="title">Title: </label>
+            <input type="text" id="title" required><br>
+            <label for="colour">Colour: </label>
+            <input type="color" id="colour" value="#FFFFFF" required><br>
+            <label for="files">Image: </label>
+            <button type="button" id="fileSelect">Select File</button>
+            <input type="file" id="files" accept="image/*" required><br>
+
+            <img id="screenView"><br>
+            <label for="description">Description: </label>
+            <br>
+            <textarea id="description" required></textarea>
+            <br>
+            <label for="changelog">Change Log: </label><br>
+            <textarea id="changelog" required></textarea><br>
+            <button>Submit</button>
+            <button type="button" id="closeForm">Close</button>
+        </form>
+    </dialog>
+
+    <template id="temp">
+        <div class="card">
+            
+            <h3 id="title"></h3>
+            <p id="version"></p>
+            <div id="screenshot"></div><br>
+            <button id="update">Update</button>
+            <button id="moreInfo">More Info</button>
+            <button id="removeCard">Remove Card</button>
+        </div>
+    </template>
+    <dialog id="incInfo">
+        <h2 id="titleDial"></h2>
+        <p id="verDial"></p>
+        <img id="screenDial">
+        <h2>Description</h2>
+        <p id="descDial"></p>
+        <h2>Version info</h2>
+        <p id="verInfoDial"></p>
+        <h2>Version History: </h2>
+        <div id="changeHistory">
+
+        </div>
+        <button id="close">Close</button>
+    </dialog>
+    <dialog id="dialName">
+        <h2>Hi Journalist!</h2>
+        <h4>Write your name here</h4>
+        <form id="nameForm">
+            <label for="devName">Name: </label>
+            <input type="text" id="devName"><br>
+            <button>Submit</button>
+            <button type="button" id="closeName">Close</button>
+        </form>
+    </dialog>
+    <template id="verCatagory">
+        <div class="verCont">
+        <h3 id="title"></h3>
+        <p id="content"></p>
+        </div>
+    </template>
+    <template id="fillCont">
+        <div class="center">
+        <h2>Let's Go!</h2>
+        <p>Welcome to Changelog, this is where all of your journal entries will be!</p>
+        </div>
+    </template>
+    <script src="main.js">
+
+    </script>
+
+</body>
+
+</html>

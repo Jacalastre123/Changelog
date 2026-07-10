@@ -1,0 +1,201 @@
+#screenView {
+        width: 50vw;
+        height: 30vh;
+        border: 1px dashed grey;
+        margin: 5px;
+
+      }
+.card {
+        width: 30vw;
+        padding: 10px;
+
+        margin: 6px;
+      }
+body {
+    background-color: white;
+    font-family: Roboto Mono;
+}
+input[type="text"], textarea {
+    border: none;
+    background-color: rgba(255,255,255,0.5);
+    padding: 5px;
+    border-radius: 10px;
+    width: 50vw;
+    margin: 5px;
+}
+input[type="color"] {
+    border: none;
+   
+    
+    width: 50vw;
+    height: 25px;
+    background-color: transparent;
+    
+    
+}
+
+dialog {
+    background-color: rgb(255, 170, 0);
+    border-radius: 10px;
+    border: 4px solid rgb(0, 0, 0);
+
+}
+
+#screenshot {
+    height: 30vw;
+    background-size: cover;
+    background-position: center;
+
+}
+input[type="file"] {
+    display: none;
+}
+
+button {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    padding: 5px;
+    font-family: Roboto Mono;
+    
+}
+* {
+    box-sizing: border-box;
+    font-family: Roboto Mono;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    
+    top: 25vh;
+    left: 0;
+    padding: 2vw;
+    overflow: scroll;
+    height: 75vh;
+    width: 100vw;
+}
+.card h3 {
+    text-overflow: ellipsis;
+    width: 80%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+header {
+    background-color: rgb(255, 170, 0);
+    padding: 5px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding-bottom: 10px;
+    width: 100vw;
+    height: 25vh;
+    display: block;
+}
+header button {
+
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#bgCo {
+    position: absolute;
+    opacity: 0;
+}
+button:hover {
+    background-color: rgb(220,220,220);
+}
+@media (max-width:900px) {
+    .card {
+        width: 90vw;
+        height: 50vh;
+        margin: 15px;
+    }
+    #container {
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        overflow: scroll;
+       
+    }
+    .mobile-sides {
+        width: 100vw;
+        display: flex;
+        background-color: transparent;
+        margin-top: 10px;
+       
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+
+    
+    
+    header {
+        min-height: 10vh;
+        display: block;
+        padding-left: 0;
+    }
+    header h1 {
+        margin: 0px;
+        font-size: 0.9em;
+        text-align: left;
+
+    }
+    header p {
+        text-align: center;
+        font-size: 1em;
+    }
+    header h1 {
+        font-size: 1.2em;
+    }
+    header button {
+        display: inline-block;
+        width: 20vw;
+        margin: 0;
+        
+    }
+  
+    #menu:hover {
+        background-color: rgba(255,255,255,0.2);
+    }
+    #screenshot {
+        width: 85vw;
+        height: 25vw;
+    }
+    nav {
+        display: block;
+
+        
+    }
+    
+}
+#screenDial {
+    width: 40vw;
+}
+#changeHistory {
+    background-color: rgba(255,255,255,0.5);
+    padding: 5px;
+    overflow: scroll;
+    height: 30vh;
+    
+}
+.verCont {
+    background-color: white;
+    padding: 5px;
+    margin: 5px;
+}
+#verInfoDial, #descDial {
+    background-color: white;
+    padding: 5px;
+}
+.center {
+    text-align: center;
+    width: 98vw;
+    
+    height: fit-content;
+    margin-top: 10px;
+}
