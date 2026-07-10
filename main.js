@@ -62,7 +62,7 @@
                 }
                 else {
                     const card = [...document.querySelectorAll(".card")].indexOf(currentElement.parentElement)
-
+                
                     cardList[card].title = title.value
                     cardList[card].version = Number(Number(cardList[card].version) + 0.1).toFixed(1)
                     cardList[card].colour = colour.value !== "#ffffff" ? colour.value: "#D9D9D9"
@@ -239,12 +239,13 @@
             const files = document.getElementById("files")
             addCard.showModal()
             if (!isUpdate) {
-                files.required = false
+                files.required = true
                 titleName.innerText = "Add Entry"
             }
             else {
                 titleName.innerText = "Update " + e.target.parentElement.querySelector("#title").innerText
                 const cardIndex = [...document.querySelectorAll(".card")].indexOf(e.target.parentElement)
+                    files.required = false
                 addCard.querySelectorAll("*").forEach(item => {
                     if (item.id === "title") {
                         item.value = cardList[cardIndex].title
