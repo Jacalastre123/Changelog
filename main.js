@@ -135,6 +135,7 @@
             starterDial()
             nameListener()
             ifEmpty()
+            colourListener()
         }
 
         function setList() {
@@ -198,11 +199,7 @@
                 if (e.target.id === "customBg") {
                     const colourInput = document.getElementById("bgCo")
                     colourInput.click()
-                    colourInput.addEventListener("input", (e) => {
-                        document.querySelectorAll("dialog").forEach(dials => dials.style.backgroundColor = colourInput.value)
-                        document.getElementById("header").style.backgroundColor = colourInput.value
-                        localStorage.setItem("headerCol", colourInput.value)
-                    })
+                    
 
                 }
                 if (e.target.id === "default") {
@@ -338,6 +335,14 @@
                 const fillClone = fillCont.content.cloneNode(true)
                 container.appendChild(fillClone)
             }
+        }
+        function colourListener() {
+            const colourInput = document.getElementById("bgCo")
+                    colourInput.addEventListener("input", (e) => {
+                        document.querySelectorAll("dialog").forEach(dials => dials.style.backgroundColor = colourInput.value)
+                        document.getElementById("header").style.backgroundColor = colourInput.value
+                        localStorage.setItem("headerCol", colourInput.value)
+                    })
         }
 
         setup()

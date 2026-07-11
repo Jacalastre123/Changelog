@@ -106,7 +106,7 @@ header button {
     opacity: 0;
 }
 button:hover {
-    background-color: rgb(220,220,220);
+    background-color: rgb(182, 182, 182);
 }
 @media (max-width:900px) {
     .card {
