@@ -118,7 +118,6 @@ button:hover {
         display: flex;
         justify-content: center;
         width: 100vw;
-        background-color: red;
         top: 25vh;
         overflow: scroll;
        

@@ -257,9 +257,6 @@
                     if (item.id === "description") {
                         item.value = cardList[cardIndex].desc
                     }
-                    if (item.id === "version") {
-                        item.value = cardList[cardIndex].version
-                    }
 
                 })
 
