@@ -108,7 +108,7 @@ header button {
 button:hover {
     background-color: rgb(182, 182, 182);
 }
-@media (max-width:900px) {
+@media (max-width:860px) {
     .card {
         width: 90vw;
         height: 50vh;

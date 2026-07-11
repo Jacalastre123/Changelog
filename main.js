@@ -21,7 +21,7 @@
 
             tempTitle.innerText = title
             tempCard.style.backgroundColor = colour
-            tempVer.innerText = ver
+            tempVer.innerText = "Version: " + ver
 
             tempScreen.style.backgroundImage = "url('" + file.fileContent + "')"
 
@@ -140,7 +140,7 @@
 
         function setList() {
             cardList.forEach(item => {
-                spawnTemp(item.title, item.colour, item.version, item.file)
+                spawnTemp(item.title, item.colour, String(item.version), item.file)
 
             })
         }
