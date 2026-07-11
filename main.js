@@ -37,6 +37,7 @@
                 const description = addition.querySelector("#description")
                 const changelog = addition.querySelector("#changelog")
                 const files = addition.querySelector("#files")
+              
                 if (colour.value === "#ffffff") {
                     colour.value = "#D9D9D9"
                 }
@@ -255,6 +256,9 @@
                     }
                     if (item.id === "description") {
                         item.value = cardList[cardIndex].desc
+                    }
+                    if (item.id === "version") {
+                        item.value = cardList[cardIndex].version
                     }
 
                 })
