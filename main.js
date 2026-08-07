@@ -204,7 +204,7 @@
 
                 }
                 if (e.target.id === "default") {
-                    document.querySelectorAll("dialog").forEach(dials => dials.style.backgroundColor = colourInput.value)
+                    document.querySelectorAll("dialog").forEach(dials => dials.style.backgroundColor = "rgb(255,170,0)"
                     document.getElementById("header").style.backgroundColor = "rgb(255, 170, 0)"
                     localStorage.setItem("headerCol", "rgb(255, 170, 0)")
 
