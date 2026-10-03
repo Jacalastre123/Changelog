@@ -84,6 +84,8 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 5px;
+    background-color: rgb(255,170,0);
+    width: 100vw;
 }
 header {
     background-color: rgb(255, 170, 0);
